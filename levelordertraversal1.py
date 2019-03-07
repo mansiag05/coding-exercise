@@ -1,5 +1,4 @@
 from tree import Node
-from queue import queue
 
 def levelordertraversal(node):
 	#calculate height of tree

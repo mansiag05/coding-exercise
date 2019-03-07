@@ -58,4 +58,19 @@ class Node:
 
 		return False
 	
-	
+	def height(self):
+		if self is None:
+			return 0
+
+		if(self.left is not None):
+			lh = self.left.height()
+		else:
+			lh = 0
+		if(self.right is not None):
+			rh = self.right.height()
+		else:
+			rh=0
+		if(lh > rh):
+			return 1+lh
+		else:
+			return 1+rh	
